@@ -22,8 +22,10 @@
   </head>
 
   <body>
-  <!-- "Execute" o código parcial na pasta shared no arquivo _navbar.html.erb -->
+  <!-- "Execute" o código parcial na pasta shared no arquivo _navbar.html.erb (...) -->
     <%= render partial: "shared/navbar" %>
+    <%= render partial: "shared/flash"%>
+
   <!-- Container cria uma área central que evita que o conteúdo do texto fique colado nas margens -->
     <div class="container">
       <%= yield %>
