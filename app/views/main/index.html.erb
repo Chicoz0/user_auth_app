@@ -1,3 +1,9 @@
 <div class="d-flex align-items center justify-content-center">
-  <H1> Welcome to Chico's first functional App, hope you enjoy it! </H1>
+  <H1> Control your socials like no one! Welcome to Content Planner </H1>
 </div>
+
+
+  <% if @user %>
+    Logged in as: <%= @user.email %>
+    <%= button_to "Logout", logout_path, method: :delete %>
+  <%end%>
